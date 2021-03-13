@@ -1,3 +1,6 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
 vecX =  np.array([3,2])
 vecY =  np.array([3,-2])
 
@@ -9,10 +12,7 @@ spanRx = scalarX * vecX[0] + scalarY * vecY[0]
 spanRy = scalarX * vecX[1] + scalarY * vecY[1]
 plt.scatter(spanRx, spanRy, s= 5, alpha= 1, color= 'green')
 
-plt.xlim(-50,50)
-plt.ylim(-50,50)
-plt.axhline(y=0, color='k')
-plt.axvline(x=0, color='k')
-plt.title('Task 1')
+plt.axhline(y=0)
+plt.axvline(x=0)
 plt.grid()
 plt.show()
