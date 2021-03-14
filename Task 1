@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-vecX =  np.array([3,2])
-vecY =  np.array([3,-2])
+vecX = np.array([3,2])
+vecY = np.array([3,-2])
 
 scalar = np.arange(-5,6,1)
 scalarX, scalarY = np.meshgrid(scalar, scalar)
@@ -10,7 +10,7 @@ vecZ = vecX + vecY
 
 spanRx = scalarX * vecX[0] + scalarY * vecY[0]
 spanRy = scalarX * vecX[1] + scalarY * vecY[1]
-plt.scatter(spanRx, spanRy, s= 5, alpha= 1, color= 'green')
+plt.scatter(spanRx, spanRy, s=5, alpha=1, color= 'green')
 
 plt.axhline(y=0)
 plt.axvline(x=0)
