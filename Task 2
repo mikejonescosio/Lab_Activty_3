@@ -24,8 +24,6 @@ plt.scatter(spanRxA, spanRyA, s= 5, alpha= 1, color= 'purple')
 plt.scatter(spanRxB, spanRyB, s= 5, alpha= 1, color= 'gold')
 plt.scatter(spanRxC, spanRyC, s= 5, alpha= 1, color= 'black')
 
-plt.xlim(-40,40)
-plt.ylim(-40,40)
 plt.axhline(y=0)
 plt.axvline(x=0)
 plt.title('Task 2')
